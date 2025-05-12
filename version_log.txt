@@ -1,0 +1,8 @@
+-------------------version 1.0 ------------------
+
+*under construction
+*haven't implemented the server interface yet
+*implemented tcp server and client to test initial waters
+*implemented data structures for request/response and routing
+*implemented router using linear search
+*haven't implemented ftp yet
