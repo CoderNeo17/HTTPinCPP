@@ -1,5 +1,5 @@
-#include "utility.cpp"
-#include "message.cpp"
+#include "utility.hpp"
+#include "message.hpp"
 #include <functional>
 #include <vector>
 #include <map>

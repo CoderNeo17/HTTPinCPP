@@ -1,0 +1,14 @@
+#IDE maintainance
+.vscode
+build
+
+#git maintainance
+.git
+
+#executables
+*.out
+
+#intermediaries
+*.o
+obj
+bin
