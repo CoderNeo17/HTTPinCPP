@@ -9,16 +9,6 @@
 std::string getDescription(int code);
 
 class Request {
-private:
-    std::string _method;
-    std::string _url;
-    std::string _version;
-    std::map<std::string, std::string> _headers;
-    std::map<std::string, std::string> _query;
-    std::string _route;
-    std::string _body;
-
-    void parseURL();
 
 public:
     Request();
@@ -33,14 +23,20 @@ public:
     std::string operator[](std::string header);
     std::string query(std::string qry);
     std::string toString();
+
+private:
+    std::string _method;
+    std::string _url;
+    std::string _version;
+    std::map<std::string, std::string> _headers;
+    std::map<std::string, std::string> _query;
+    std::string _route;
+    std::string _body;
+
+    void parseURL();
 };
 
 class Response {
-private:
-    std::string _version;
-    int _status;
-    std::map<std::string, std::string> _headers;
-    std::string _body;
 
 public:
     Response();
@@ -59,6 +55,13 @@ public:
     void setBody(const std::string& body);
 
     std::string toString() const;
+
+private:
+    std::string _version;
+    int _status;
+    std::map<std::string, std::string> _headers;
+    std::string _body;
+
 };
 
 #endif // MESSAGE_HPP

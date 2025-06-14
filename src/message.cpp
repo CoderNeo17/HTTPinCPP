@@ -16,7 +16,7 @@ Request::Request(const char* req) {
         size_t pos = line.find(": ");
         if (pos != std::string::npos) {
             _headers[line.substr(0, pos)] = line.substr(pos + 2);
-            _headers[line.substr(0, pos)].pop_back(); // Remove trailing '\r'
+            _headers[line.substr(0, pos)].pop_back(); // Remove trailing "\r"
         }
     }
 
@@ -104,8 +104,7 @@ void Request::parseURL() {
 
 Response::Response() : _version("HTTP/1.1"), _status(200), _body("") {}
 
-Response::Response(std::string version, int status, std::string body)
-    : _version(version), _status(status), _body(body) {}
+Response::Response(std::string version, int status, std::string body) : _version(version), _status(status), _body(body) {}
 
 std::string Response::version() const { return _version; }
 int Response::status() const { return _status; }
