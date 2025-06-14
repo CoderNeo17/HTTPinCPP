@@ -1,5 +1,7 @@
 # HTTP SERVER IN CPP
 
+## Contributors
+This is a group project by Bharath(@ByteWizard-018) and Sri Balaji Abhishek(@CoderNeo17)
 ## Description
 This is a simple HTTP server written in C++. It is designed to handle basic HTTP requests and serve static files. The server is built using the C++ standard library and does not require any external dependencies.
 ## Features
